@@ -38,6 +38,7 @@ class ProfilePage extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const CircleAvatar(
                 radius: 32,
@@ -49,6 +50,7 @@ class ProfilePage extends StatelessWidget {
               const SizedBox(width: 16),
               Expanded(
                 child: Column(
+                  mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
                     Text(
@@ -58,7 +60,9 @@ class ProfilePage extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text('NIM: 20240801187'),
+                    Text(
+                      'NIM: 20240801187',
+                    ),
                   ],
                 ),
               ),

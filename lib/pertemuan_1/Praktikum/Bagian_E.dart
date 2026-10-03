@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Hello Flutter'),
         ),
-        body: Center(
+        body: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Icon(
                 Icons.flutter_dash,
                 size: 80,
@@ -28,7 +28,10 @@ class MyApp extends StatelessWidget {
               Text(
                 'Halo, nama saya Rizqi Bagas Wicaksono',
                 style: TextStyle(fontSize: 24),
+                textAlign: TextAlign.center,
               ),
+              SizedBox(height: 8),
+              
               Text(
                 'NIM: 202408001187',
               ),
